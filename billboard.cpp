@@ -116,3 +116,12 @@ int  main(){
 	cout<<"\nMax Revenue : "<<temp<<"\n";
 	return 0;
 }
+
+
+/* Time Complexity:-
+ 
+ 	In this process, we are computing values in the array .
+	But for each element of array, array is again iterated for possible bill boards
+	:: T(n) = O(n^2)
+	 
+*/
