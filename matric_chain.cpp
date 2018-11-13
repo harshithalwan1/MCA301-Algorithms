@@ -53,3 +53,17 @@ int main()
     getchar();
     return 0;
 }
+
+
+ /*Time Complexity:-
+ 
+ In this process, we are computing values in the array matrix but only half of them.
+ Since we are performing chain multiplications of these matrices in the order of 2, 3 and so on,
+ 
+ Therefore, we are generating n(n-1)/2 elements. For each element, we are calculating all values and finding the minimum
+ out of them, which would be done at most n times.
+ 
+ Hence, n(n-1)/2 * n --> which gives us the time complexity of O(n^3).
+ 
+ 
+*/
