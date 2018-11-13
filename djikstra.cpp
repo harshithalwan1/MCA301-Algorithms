@@ -89,3 +89,45 @@ int main() {
 
     return 0;
 }
+
+/*
+ 
+ Time Complexity:-
+ 
+ Dijkstra Algorithm is used to find the shortest distance to |V| no. of vertices in a graph.
+ Since we cannot determine exactly how many vertices it will Relax as it totally depends on the graph,
+ but it is clearly evident that at most it would Relax |V| no. of vertices.
+ 
+ This is proposed from the hypothesis that a given vertex may be connected to every other vertex in a given graph.
+ Such type of graph will be called a Complete graph where each vertex is connected to every other vertex.
+ 
+ Therefore, |V| no. vertices are relaxed against each vertex in a complete graph.
+ Hence, |V| * |V| which will be Big-Oh O(|V|^2). Let n = |V| then, the time complexity is O(n^2).
+ 
+ */
+
+
+/* Test cases
+ 
+ Set VERTEX = 6
+ 
+ {0, 50, 45, 10, 0, 0,},
+ {0, 0, 10, 15, 0, 0},
+ {0, 0, 0, 0, 30, 0},
+ {10, 0, 0, 0, 15, 0},
+ {0, 20, 35, 0, 0, 0},
+ {0, 0, 0, 0, 3, 0}
+ 
+ 
+ Set VERTEX = 9
+ {0, 4, 0, 0, 0, 0, 0, 8, 0},
+ {4, 0, 8, 0, 0, 0, 0, 11, 0},
+ {0, 8, 0, 7, 0, 4, 0, 0, 2},
+ {0, 0, 7, 0, 9, 14, 0, 0, 0},
+ {0, 0, 0, 9, 0, 10, 0, 0, 0},
+ {0, 0, 4, 14, 10, 0, 2, 0, 0},
+ {0, 0, 0, 0, 0, 2, 0, 1, 6},
+ {8, 11, 0, 0, 0, 0, 1, 0, 7},
+ {0, 0, 2, 0, 0, 0, 6, 7, 0}
+ 
+ */
